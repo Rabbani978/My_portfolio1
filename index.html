@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="file.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="container">
+        <header class="animated">
+            <a href="index.html" class="logo">Portfolio</a>
+
+            <div id="menu-icon" class="menu-icon">☰</div>
+
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="skill.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home animated">
+            <div class="home-detail">
+                <h1>Golam Rabbani</h1>
+                <h2>Frontend Developer</h2>
+                <p>Hello! I’m <b>Md. Golam Rabbani</b> a passionate frontend developer with skills in React.js, HTML, CSS, and JavaScript. As a fresher, I bring strong enthusiasm for learning and problem-solving, along with practical exposure from academic projects and an industrial attachment. I love crafting user-friendly web apps while continuously growing as a developer.</p>
+
+                <div class="download-social">
+                    <a target="_blank" href="https://drive.google.com/file/d/1BQ6FsEWs-9JCfhPZ4V_mjNFPXfXVyYFW/view?usp=sharing" class="btn">Download CV</a>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://github.com/Rabbani978"><i class="ri-github-fill"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/md-golam-rabbani-5b1303263"><i class="ri-linkedin-fill"></i></a>
+                        <a target="_blank" href="https://x.com/Rabbani700978"><i class="ri-twitter-fill"></i></a>
+                        <a target="_blank" href="https://golam-rabbani.vercel.app"><i class="ri-opera-line"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="home.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
+    if(menuIcon){
+        menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('show');
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Portfolio</title>
+    <link rel="stylesheet" href="skill.css">
+    <link rel="icon" type="image/svg+xml" href="file.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="container">
+        <header class="animated">
+            <a href="index.html" class="logo">Portfolio</a>
+
+            <div id="menu-icon" class="menu-icon">☰</div>
+
+            <nav class="navbar" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="#" class="active">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="skills animated">
+            <h1 class="title">My Skills</h1>
+
+            <div class="skills-list">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="bar"><div class="progress" style="width: 95%;"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>React.js</span>
+                    <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>Tailwind CSS</span>
+                    <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
+    if(menuIcon){
+        menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('show');
+        });
+    }
+</script>
+
+</body>
+</html>

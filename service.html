@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Portfolio</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="icon" type="image/svg+xml" href="file.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="container">
+        <header class="animated">
+            <a href="index.html" class="logo">Portfolio</a>
+
+            <div id="menu-icon" class="menu-icon">☰</div>
+
+            <nav class="navbar" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#" class="active">Services</a>
+                <a href="skill.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="services animated">
+            <h1 class="title">My Projects</h1>
+
+            <div class="service-cards">
+                <div class="card">
+                    <i class="ri-computer-line"></i>
+                    <h2>Netflix Clone</h2>
+                    <p>Built a Netflix-style UI using HTML, CSS, and JS with responsive design.</p>
+                </div>
+
+                <div class="card">
+                    <i class="ri-store-2-line"></i>
+                    <h2>E-Commerce</h2>
+                    <p>Modern shopping site layout with clean UI and cart design.</p>
+                </div>
+
+                <div class="card">
+                    <i class="ri-smartphone-line"></i>
+                    <h2>Portfolio Website</h2>
+                    <p>Personal portfolio showcasing my skills and projects.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
+    if(menuIcon){
+        menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('show');
+        });
+    }
+</script>
+
+</body>
+</html>
